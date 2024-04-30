@@ -1,10 +1,5 @@
 # Task Manager
-<img src="https://img.shields.io/static/v1?label=Task%20Manager&message=Project&color=4CAF50&style=plastic"/>
-<img src="https://img.shields.io/static/v1?label=Kanban&message=Methodology&color=0074E8&style=plastic"/>
-<img src="https://img.shields.io/static/v1?label=Docker&message=Containerization&color=2496ED&style=plastic&logo=docker"/>
-<img src="https://img.shields.io/static/v1?label=Python&message=Programming%20Language&color=3776AB&style=plastic&logo=python"/>
-<img src="https://img.shields.io/static/v1?label=PostgreSQL&message=Database&color=336791&style=plastic&logo=postgresql"/><img src="https://img.shields.io/static/v1?label=Django&message=Framework&color=092E20&style=plastic&logo=django"/>
-<img src="https://img.shields.io/static/v1?label=Status&message=Em%20Desenvolvimento&color=yellow&style=plastic"/>
+<img src="https://img.shields.io/static/v1?label=Task%20Manager&message=Project&color=4CAF50&style=plastic"/><img src="https://img.shields.io/static/v1?label=Kanban&message=Methodology&color=0074E8&style=plastic"/><img src="https://img.shields.io/static/v1?label=Docker&message=Containerization&color=2496ED&style=plastic&logo=docker"/><img src="https://img.shields.io/static/v1?label=Python&message=Programming%20Language&color=3776AB&style=plastic&logo=python"/><img src="https://img.shields.io/static/v1?label=PostgreSQL&message=Database&color=336791&style=plastic&logo=postgresql"/><img src="https://img.shields.io/static/v1?label=Django&message=Framework&color=092E20&style=plastic&logo=django"/><img src="https://img.shields.io/static/v1?label=Status&message=Em%20Desenvolvimento&color=yellow&style=plastic"/>
 
 ## Descrição
 Gerenciador de tarefas estilo Kanban, desenvolvido em Django.
