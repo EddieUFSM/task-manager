@@ -1,0 +1,29 @@
+# Etapa 1: Construir a aplicação
+FROM python:3.10-slim AS build
+
+# Define o diretório de trabalho no contêiner
+WORKDIR /app
+
+# Copia o arquivo requirements.txt para o diretório de trabalho
+COPY requirements.txt .
+
+# Instala as dependências do Python a partir do arquivo requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copia o restante dos arquivos do projeto para o diretório de trabalho
+COPY . .
+
+# Etapa 2: Executar a aplicação
+FROM python:3.10-slim AS production
+
+# Define o diretório de trabalho no contêiner
+WORKDIR /app
+
+# Copia os arquivos do build anterior para o diretório de trabalho
+COPY --from=build /app .
+
+# Exponha a porta 8000 (ou a porta que você está usando para executar o servidor)
+EXPOSE 8000
+
+# Define o comando padrão para executar o servidor de produção (Gunicorn)
+CMD ["gunicorn", "--bind", "0.0.0.0:8000", "task_manager.wsgi:application"]
